@@ -1,6 +1,6 @@
 import { User } from "../models/User.js";
-import bcryptjs from "bcryptjs";
-import crypto from "crypto";
+import bcryptjs from "bcryptjs";//notes:bcryptjs is a library for hashing
+import crypto from "crypto";//
 import { generateVerificationToken } from "../utils/generateVerificationToken.js";
 import { generateTokenAndSetCookie } from "../utils/generateTokenAndSetCookies.js";
 import { sendVerificationEmail,sendWelcomeEmail,sendPasswordResetEmail,sendResetSuccessEmail } from "../mailtrap/emails.js";
